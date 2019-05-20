@@ -1,0 +1,24 @@
+GET http://localhost:3000/subscribers
+
+###
+
+DELETE http://localhost:3000/subscribers/5ce2f72472d82407a42fc1ca
+
+###
+
+PATCH http://localhost:3000/subscribers/5ce2fadb72d82407a42fc1cc
+Content-Type: application/json
+
+{
+  "name": "Hilda Laing"
+}
+
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+  "name": "Hilda Laing",
+  "subscribedToChannel": "Lee Charles Laing Love for Life"
+}
